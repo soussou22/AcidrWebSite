@@ -1,15 +1,33 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Drkiq</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<!doctype html>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-  </head>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <body>
-    <%= yield %>
-  </body>
+  <title>Aéroclub de l'île de Ré</title>
+  <meta name="description" content="l'Aeroclub de l'ile de Ré est une association qui propose des vols et des formation de pilotes. PPL, ATPL, CPL, Ainsi que des vols de découverte.">
+  <meta name="author" content="Alexandre Bouquet">
+
+  <meta property="og:title" content="Aéroclub de l'île de Ré">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.aeroclub-iledere.fr/">
+  <meta property="og:description" content="l'Aeroclub de l'ile de Ré est une association qui propose des vols et des formation de pilotes. PPL, ATPL, CPL, Ainsi que des vols de découverte.">
+  <meta property="og:image" content="<%= asset_path('F-GLRH 1.jpg') %>" >
+
+  <%= stylesheet_link_tag "fontawesome-all.min"%>
+  <%= stylesheet_link_tag "main" %>
+  <%= stylesheet_link_tag "noscript" %>
+  <%= javascript_include_tag "breakpoints.min" , 'data-turbolinks-track': true %>
+  <%= javascript_include_tag "browser.min" , 'data-turbolinks-track': true %>
+  <%= javascript_include_tag "jquery.min" , 'data-turbolinks-track': true %>
+  <%= javascript_include_tag "jquery.scrollex.min" , 'data-turbolinks-track': true %>
+  <%= javascript_include_tag "jquery.scrolly.min" , 'data-turbolinks-track': true %>
+  <%= javascript_include_tag "main" , 'data-turbolinks-track': true %>
+  <%= javascript_include_tag "util" , 'data-turbolinks-track': true %>
+
+</head>
+<body>
+<%= yield %>
+</body>
 </html>
