@@ -15,19 +15,20 @@
   <meta property="og:description" content="l'Aeroclub de l'ile de Ré est une association qui propose des vols et des formation de pilotes. PPL, ATPL, CPL, Ainsi que des vols de découverte.">
   <meta property="og:image" content="<%= asset_path('F-GLRH 1.jpg') %>" >
 
-  <%= stylesheet_link_tag "fontawesome-all.min"%>
+  
   <%= stylesheet_link_tag "main" %>
   <%= stylesheet_link_tag "noscript" %>
-  <%= javascript_include_tag "breakpoints.min" , 'data-turbolinks-track': true %>
-  <%= javascript_include_tag "browser.min" , 'data-turbolinks-track': true %>
-  <%= javascript_include_tag "jquery.min" , 'data-turbolinks-track': true %>
-  <%= javascript_include_tag "jquery.scrollex.min" , 'data-turbolinks-track': true %>
-  <%= javascript_include_tag "jquery.scrolly.min" , 'data-turbolinks-track': true %>
-  <%= javascript_include_tag "main" , 'data-turbolinks-track': true %>
-  <%= javascript_include_tag "util" , 'data-turbolinks-track': true %>
 
 </head>
 <body>
 <%= yield %>
+<!-- Scripts -->
+<%= javascript_include_tag "jquery.min" , 'data-turbolinks-track': true %>
+<%= javascript_include_tag "jquery.scrollex.min" , 'data-turbolinks-track': true %>
+<%= javascript_include_tag "jquery.scrolly.min" , 'data-turbolinks-track': true %>
+<%= javascript_include_tag "browser.min" , 'data-turbolinks-track': true %>
+<%= javascript_include_tag "breakpoints.min" , 'data-turbolinks-track': true %>
+<%= javascript_include_tag "util" , 'data-turbolinks-track': true %>
+<%= javascript_include_tag "main" , 'data-turbolinks-track': true %>
 </body>
 </html>
