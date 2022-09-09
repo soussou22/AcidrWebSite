@@ -80,4 +80,8 @@ gem 'sidekiq', '~> 6.4.2'
 
 gem 'redis-rails', '~> 5.0.2'
 
-gem 'font-awesome-rails'
+gem 'font-awesome-sass'
+
+gem 'jquery-rails'
+
+gem 'bootstrap-sass'

@@ -18,6 +18,6 @@ module Drkiq
                          { namespace: 'drkiq::cache' }
 
     config.active_job.queue_adapter = :sidekiq
-    config.assets.paths << Rails.root.join("app", "assets", "fonts")
+    config.assets.paths << Rails.root.join("app", "assets", "fonts", "webfonts")
   end
 end

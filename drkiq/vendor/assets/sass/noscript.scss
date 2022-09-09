@@ -1,11 +1,11 @@
-@import 'libs/vars';
-@import 'libs/functions';
-@import 'libs/mixins';
-@import 'libs/vendor';
-@import 'libs/breakpoints';
-@import 'libs/html-grid';
-@import 'libs/fixed-grid';
-@import "font-awesome";
+@import '../../../vendor/assets/sass/libs/vars';
+@import '../../../vendor/assets/sass/libs/functions';
+@import '../../../vendor/assets/sass/libs/mixins';
+@import '../../../vendor/assets/sass/libs/vendor';
+@import '../../../vendor/assets/sass/libs/breakpoints';
+@import '../../../vendor/assets/sass/libs/html-grid';
+@import '../../../vendor/assets/sass/libs/fixed-grid';
+@import '../../../vendor/assets/stylesheets/fontawesome-all.min';
 
 /*
 	Massively by HTML5 UP
@@ -17,7 +17,7 @@
 
 	#wrapper {
 		background-color:		_palette(wrapper-bg);
-		background-image:		url(asset_path('overlay.png')),	linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1)),	url(asset_path('BG.jpg'));
+		background-image:		asset-url("overlay.png"),	linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1)),	asset-url('bg.jpg');
 		background-size:		auto,								auto,														100% auto;
 		background-position:	center,								center,														top center;
 		background-repeat:		repeat,								no-repeat,													no-repeat;

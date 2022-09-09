@@ -15,20 +15,25 @@
   <meta property="og:description" content="l'Aeroclub de l'ile de Ré est une association qui propose des vols et des formation de pilotes. PPL, ATPL, CPL, Ainsi que des vols de découverte.">
   <meta property="og:image" content="<%= asset_path('F-GLRH 1.jpg') %>" >
 
-  
-  <%= stylesheet_link_tag "main" %>
-  <%= stylesheet_link_tag "noscript" %>
+
+
+ <%= stylesheet_link_tag "main" , media: "all" %>
+ <noscript><%= stylesheet_link_tag "noscript", media: "all" %> </noscript>
 
 </head>
-<body>
+<body class="is-preload" > 
 <%= yield %>
 <!-- Scripts -->
-<%= javascript_include_tag "jquery.min" , 'data-turbolinks-track': true %>
-<%= javascript_include_tag "jquery.scrollex.min" , 'data-turbolinks-track': true %>
-<%= javascript_include_tag "jquery.scrolly.min" , 'data-turbolinks-track': true %>
-<%= javascript_include_tag "browser.min" , 'data-turbolinks-track': true %>
-<%= javascript_include_tag "breakpoints.min" , 'data-turbolinks-track': true %>
-<%= javascript_include_tag "util" , 'data-turbolinks-track': true %>
-<%= javascript_include_tag "main" , 'data-turbolinks-track': true %>
+
+      
+<script src="<%=asset_path("jquery.min.js")%>"></script>
+ <script src="<%=asset_path("jquery.scrollex.min.js")%>"></script>
+ <script src="<%=asset_path("jquery.scrolly.min.js")%>"></script>
+ <script src="<%=asset_path("browser.min.js")%>"></script>
+ <script src="<%=asset_path("breakpoints.min.js")%>"></script>
+ <script src="<%=asset_path("util.js")%>"></script>
+<script src="<%=asset_path("main.js")%>"></script>
+
 </body>
+
 </html>

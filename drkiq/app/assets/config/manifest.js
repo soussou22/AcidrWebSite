@@ -1,14 +1,18 @@
+//= require_self
+//= link_tree ../../../vendor/assets/javascript
+//= link_tree ../../../vendor/assets/sass
+//= link_tree ../../../vendor/assets/sass/libs
+//= link_tree ../../../vendor/assets/stylesheets
 //= link_tree ../images
-//= link_tree ../javascript
-//= link_directory ../stylesheets .scss
-
-//= link main.scss
-//= link noscript.scss
-//= require breakpoints.min
-//= require browser.min
 //= require jquery.min
 //= require jquery.scrollex.min
 //= require jquery.scrolly.min
-//= require main
+//= require browser.min
+//= require breakpoints.min
 //= require util
+//= require main
+//= link main.css
+//= link noscript.css
+
+
 

@@ -151,7 +151,8 @@
 				'</div>'
 			)
 				.appendTo($body)
-				.panel({delay: 500,
+				.panel({
+					delay: 500,
 					hideOnClick: true,
 					hideOnSwipe: true,
 					resetScroll: true,
